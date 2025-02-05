@@ -1,0 +1,48 @@
+This project analyzes a sentence provided by the user to calculate:
+
+- The **length** of the sentence (number of characters)
+- The **number of words**
+- The **number of vowels**
+
+---
+
+## 🚀 **Algorithm Overview**
+
+### **Variables Used:**
+
+- `sentence`: Stores the user-input sentence.
+- `length_counter`: Counts the total number of characters.
+- `word_counter`: Counts the number of words (initially set to 1).
+- `vowel_counter`: Counts the number of vowels in the sentence.
+- `vowels`: A string containing both uppercase and lowercase vowels (`"aeiouAEIOU"`).
+
+---
+
+## ⚡ **Step-by-Step Algorithm**
+
+1. **Input**
+
+   - Prompt the user: `"Enter the sentence ending with a period:"`
+   - Store the input in `sentence`.
+
+2. **Initialize Counters**
+
+   - `length_counter = 0`
+   - `word_counter = 1` _(Assumes at least one word exists)_
+   - `vowel_counter = 0`
+
+3. **Process Each Character**
+
+   - **Loop** through each character in `sentence`:
+     - **Count Characters:**
+       - Increment `length_counter` by 1.
+     - **Count Vowels:**
+       - If the character exists in `vowels`, increment `vowel_counter` by 1.
+     - **Count Words:**
+       - If the character is a space (`" "`), increment `word_counter` by 1.
+
+4. **Output Results**
+   - Display the following:
+     - `"Length of the sentence: [length_counter]"`
+     - `"Number of words in the sentence: [word_counter]"`
+     - `"Number of vowels in the sentence: [vowel_counter]"
